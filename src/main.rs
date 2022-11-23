@@ -3,7 +3,7 @@ extern crate clap;
 use std::collections::hash_map::DefaultHasher;
 use std::fs::{copy, File, OpenOptions};
 use std::hash::{Hash, Hasher};
-use std::io::{Write};
+use std::io::Write;
 
 use clap::{App, Arg};
 use mac_address::get_mac_address;
@@ -18,7 +18,7 @@ fn main(){
     .arg(Arg::with_name("dotenv")
         .long("dotenv")
         .short("de")
-        .help("Your .env filename(default=.env)")
+        .help("Your .env filename(default=\".env\")")
         .takes_value(true)
         .required(false)
         .index(1))
