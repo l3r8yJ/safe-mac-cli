@@ -32,7 +32,7 @@ fn main(){
         .append(true)
         .open(".safe_env")
         .expect("Error: can't open a copy...");
-    write!(cfg, "{}", safe).and_then(|| {
+    write!(cfg, "{}", safe).and_then(|()| {
         println!("Done! You can take a look on \".safe_env\" file!");
         Ok(())
     }).expect("Error: can't create a copy...");
