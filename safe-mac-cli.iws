@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="demo">
+    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="clean up">
       <change afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/safe-mac-cli.iws" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
@@ -54,20 +54,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo" />
@@ -115,6 +119,9 @@
       <workItem from="1669048126308" duration="1426000" />
       <workItem from="1669050601358" duration="611000" />
       <workItem from="1669138819791" duration="9640000" />
+      <workItem from="1669224877636" duration="967000" />
+      <workItem from="1669240348623" duration="29000" />
+      <workItem from="1669240384406" duration="249000" />
     </task>
     <task id="LOCAL-00001" summary="Test impl">
       <created>1668995763192</created>
@@ -144,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669194908070</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="clean up">
+      <created>1669224906054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669224906054</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +179,8 @@
     <MESSAGE value="Test impl" />
     <MESSAGE value="upd" />
     <MESSAGE value="demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo" />
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
