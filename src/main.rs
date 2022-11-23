@@ -34,6 +34,7 @@ fn main(){
         .expect("Error: can't open a copy...");
     write!(cfg, "{}", safe)
         .expect("Error: can't append new line...");
+    println!("Done! You can take a look on \".safe_env\" file!")
 }
 
 fn self_mac_addr_as_string() -> String {

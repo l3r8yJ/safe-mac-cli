@@ -7,11 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="Test impl">
+    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="upd">
       <change afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/safe-mac-cli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/safe-mac-cli.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/safe-mac-cli.iws" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -74,6 +72,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/target/release" />
     </key>
   </component>
   <component name="RunManager">
@@ -115,7 +114,7 @@
       <workItem from="1668989738036" duration="6874000" />
       <workItem from="1669048126308" duration="1426000" />
       <workItem from="1669050601358" duration="611000" />
-      <workItem from="1669138819791" duration="5924000" />
+      <workItem from="1669138819791" duration="8531000" />
     </task>
     <task id="LOCAL-00001" summary="Test impl">
       <created>1668995763192</created>
@@ -124,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668995763192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="upd">
+      <created>1669191926855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669191926855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +149,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test impl" />
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
