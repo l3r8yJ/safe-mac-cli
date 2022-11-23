@@ -2,12 +2,16 @@
 name = "safe-mac-cli"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "A CLI tool, that creates new .env file which based on something you choose and appends a mac-address to it."
+readme = "README.md"
+repository = "https://github.com/l3r8yJ/safe-mac-cli"
+license = "MIT"
+keywords = ["cli tool", "safety", "mac-address"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 anyhow = "1.0.66"
-clap = { version = "2.29.4"}
+clap = { version = "2.29.4" }
 sha256 = "1.1.1"
 mac_address = { version = "1.1.4" }
 pnet = "0.31.0"
