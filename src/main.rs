@@ -10,6 +10,7 @@ use mac_address::get_mac_address;
 
 fn main(){
     let safe = self_mac_addr_as_string();
+    let senv = ".safe_env";
     let matches = App::new("safe-mac-cli")
         .author("Ivan I. <clicker.heroes.acg@gmail.com")
         .version("0.1.0")
@@ -24,16 +25,16 @@ fn main(){
         .index(1))
         .get_matches();
     let dotenv = matches.value_of("dotenv").unwrap_or(".env");
-    File::create(".safe_env").expect("Creation failed...");
-    copy(dotenv, ".safe_env")
+    File::create(senv).expect("Creation failed...");
+    copy(dotenv, senv)
         .expect("Error: can't create a copy of data...");
     let mut cfg = OpenOptions::new()
         .write(true)
         .append(true)
-        .open(".safe_env")
+        .open(senv)
         .expect("Error: can't open a copy...");
     write!(cfg, "{}", safe).and_then(|()| {
-        println!("Done! You can take a look on \".safe_env\" file!");
+        println!("Done! You can take a look at \".safe_env\" file!");
         Ok(())
     }).expect("Error: can't create a copy...");
 }
