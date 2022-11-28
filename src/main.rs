@@ -19,6 +19,7 @@ fn main(){
     .arg(Arg::with_name("dotenv")
         .long("dotenv")
         .short("de")
+        .default_value(".env")
         .help("Your .env filename(default=\".env\")")
         .takes_value(true)
         .required(false)
