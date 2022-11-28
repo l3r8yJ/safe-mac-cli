@@ -7,9 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment=".gitignore">
+    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="naming">
       <change beforePath="$PROJECT_DIR$/safe-mac-cli.iws" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +120,7 @@
       <workItem from="1669224877636" duration="967000" />
       <workItem from="1669240348623" duration="29000" />
       <workItem from="1669240384406" duration="1888000" />
+      <workItem from="1669275393488" duration="645000" />
     </task>
     <task id="LOCAL-00001" summary="Test impl">
       <created>1668995763192</created>
@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669241528305</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="naming">
+      <created>1669275433799</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669275433799</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +202,8 @@
     <MESSAGE value="clean up" />
     <MESSAGE value="msg logic" />
     <MESSAGE value=".gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
+    <MESSAGE value="naming" />
+    <option name="LAST_COMMIT_MESSAGE" value="naming" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
