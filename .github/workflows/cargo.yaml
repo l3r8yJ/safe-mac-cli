@@ -1,7 +1,7 @@
 name: cargo
 on:
-  push: master
-  pull_request: master
+  push:
+  pull_request:
 concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
@@ -17,6 +17,7 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - run: cargo test --release
+      - run: cargo test
       - run: target/debug/safe-mac-cli --help
+      - run: cargo test --release
       - run: cargo fmt --check

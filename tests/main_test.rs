@@ -2,14 +2,15 @@ extern crate core;
 
 mod common;
 
+use anyhow::Result;
 use std::fs;
 use std::fs::File;
-use std::io::{Write};
+use std::io::Write;
 use tempfile::TempDir;
-use anyhow::Result;
 
 #[test]
-fn basic_case() -> Result<()> { let tmp = TempDir::new()?;
+fn basic_case() -> Result<()> {
+    let tmp = TempDir::new()?;
     File::create(tmp.path().join("config.txt"))?.write_all(
         "
             BOT_TOKEN=5952187433:AAElWDo96OZExms06d4zqKGvtJ81BI-DaXw
@@ -18,7 +19,7 @@ fn basic_case() -> Result<()> { let tmp = TempDir::new()?;
             REDIS_URL=redis://127.0.0.1/
             MONGODB_HOST=mongodb://localhost:27017/Hackathon
         "
-            .as_bytes()
+        .as_bytes(),
     )?;
     assert_cmd::Command::cargo_bin("safe-mac-cli")
         .unwrap()
@@ -28,10 +29,7 @@ fn basic_case() -> Result<()> { let tmp = TempDir::new()?;
         .success();
     match fs::read_to_string(tmp.path().join(".safe_env")) {
         Ok(line) => {
-            assert_eq!(
-                line.contains("MAC_ADDR"),
-                true
-            )
+            assert_eq!(line.contains("MAC_ADDR"), true)
         }
         Err(err) => {
             log::error!("{}", err);
