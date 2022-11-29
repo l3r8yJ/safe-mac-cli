@@ -2,6 +2,6 @@
 config.txt
 .safe_env
 *.relf
-*.iws
-*.ipr
-*.iml
+safe-mac-cli.iml
+safe-mac-cli.ipr
+safe-mac-cli.iws
