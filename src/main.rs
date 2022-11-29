@@ -21,7 +21,7 @@ fn init() {
         .unwrap();
 }
 
-fn main(){
+fn main() {
     let safe = self_mac_addr_as_string();
     let senv = ".safe_env";
     let matches = App::new("safe-mac-cli")
@@ -29,28 +29,31 @@ fn main(){
         .version("0.1.0")
         .name("safe-mac-cli")
         .about("Encrypts mac address and add into your .env file.")
-    .arg(Arg::with_name("dotenv")
-        .long("dotenv")
-        .short("de")
-        .default_value(".env")
-        .help("Your .env filename(default=\".env\")")
-        .takes_value(true)
-        .required(false)
-        .index(1))
+        .arg(
+            Arg::with_name("dotenv")
+                .long("dotenv")
+                .short("de")
+                .default_value(".env")
+                .help("Your .env filename(default=\".env\")")
+                .takes_value(true)
+                .required(false)
+                .index(1),
+        )
         .get_matches();
     let dotenv = matches.value_of("dotenv").unwrap();
     File::create(senv).expect("Creation failed...");
-    copy(dotenv, senv)
-        .expect("Error: can't create a copy of data...");
+    copy(dotenv, senv).expect("Error: can't create a copy of data...");
     let mut cfg = OpenOptions::new()
         .write(true)
         .append(true)
         .open(senv)
         .expect("Error: can't open a copy...");
-    write!(cfg, "{}", safe).and_then(|()| {
-        log::info!("Done! You can take a look at \".safe_env\" file!");
-        Ok(())
-    }).expect("Error: can't create a copy...");
+    write!(cfg, "{}", safe)
+        .and_then(|()| {
+            log::info!("Done! You can take a look at \".safe_env\" file!");
+            Ok(())
+        })
+        .expect("Error: can't create a copy...");
 }
 
 fn self_mac_addr_as_string() -> String {
