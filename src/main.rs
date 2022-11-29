@@ -26,7 +26,7 @@ fn main() {
     let senv = ".safe_env";
     let matches = App::new("safe-mac-cli")
         .author("Ivan I. <clicker.heroes.acg@gmail.com")
-        .version("0.1.2")
+        .version("0.1.3")
         .name("safe-mac-cli")
         .about("Encrypts mac address and add into your .env file.")
         .arg(
@@ -59,7 +59,7 @@ fn main() {
 fn self_mac_addr_as_string() -> String {
     let addr_as_bytes = get_mac_address().unwrap().unwrap().bytes();
     let addr = pnet::util::MacAddr::from(addr_as_bytes);
-    format!("MAC_ADDR={}", hash(&addr))
+    format!("\nMAC_ADDR={}", hash(&addr))
 }
 
 fn hash<T: Hash>(t: &T) -> u64 {

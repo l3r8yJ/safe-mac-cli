@@ -6,7 +6,7 @@ use simple_logger::SimpleLogger;
 fn init() {
     SimpleLogger::new()
         .without_timestamps()
-        .with_level(LevelFilter::Trace)
+        .with_level(LevelFilter::Info)
         .init()
         .unwrap();
 }
