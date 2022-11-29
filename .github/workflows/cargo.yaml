@@ -17,6 +17,7 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - run: cargo test --release
+      - run: cargo test
       - run: target/debug/safe-mac-cli --help
+      - run: cargo test --release
       - run: cargo fmt --check
