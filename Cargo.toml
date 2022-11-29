@@ -6,7 +6,7 @@ description = "A CLI tool, that creates new .env file which based on something y
 readme = "README.md"
 repository = "https://github.com/l3r8yJ/safe-mac-cli"
 license = "MIT"
-keywords = ["cli tool", "safety", "mac-address"]
+keywords = ["tool", "safety", "mac-address"]
 categories = ["command-line-utilities"]
 
 [dependencies]
