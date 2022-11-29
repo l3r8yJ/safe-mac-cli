@@ -26,7 +26,7 @@ fn main() {
     let senv = ".safe_env";
     let matches = App::new("safe-mac-cli")
         .author("Ivan I. <clicker.heroes.acg@gmail.com")
-        .version("0.1.0")
+        .version("0.1.2")
         .name("safe-mac-cli")
         .about("Encrypts mac address and add into your .env file.")
         .arg(
