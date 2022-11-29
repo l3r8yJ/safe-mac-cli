@@ -7,11 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="test improvement">
-      <change beforePath="$PROJECT_DIR$/safe-mac-cli.iws" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/main_test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/main_test.rs" afterDir="false" />
-    </list>
+    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="test improvement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +142,7 @@
       <workItem from="1669240348623" duration="29000" />
       <workItem from="1669240384406" duration="1888000" />
       <workItem from="1669275393488" duration="645000" />
-      <workItem from="1669658045354" duration="8233000" />
+      <workItem from="1669658045354" duration="8535000" />
     </task>
     <task id="LOCAL-00001" summary="Test impl">
       <created>1668995763192</created>
