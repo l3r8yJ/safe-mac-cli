@@ -1,3 +1,7 @@
 /target
 config.txt
 .safe_env
+*.relf
+*.iws
+*.ipr
+*.iml

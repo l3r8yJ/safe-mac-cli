@@ -7,7 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="fix" />
+    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/safe-mac-cli.iws" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +58,13 @@
           </list>
         </option>
       </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
     </option>
   </component>
   <component name="GoLibraries">
@@ -172,7 +182,7 @@
       <workItem from="1669240348623" duration="29000" />
       <workItem from="1669240384406" duration="1888000" />
       <workItem from="1669275393488" duration="645000" />
-      <workItem from="1669658045354" duration="9413000" />
+      <workItem from="1669658045354" duration="10127000" />
     </task>
     <task id="LOCAL-00001" summary="Test impl">
       <created>1668995763192</created>
@@ -251,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669719335972</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix">
+      <created>1669720249947</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669720249947</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +279,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="workflow-test-branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
