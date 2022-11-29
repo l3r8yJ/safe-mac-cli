@@ -6,7 +6,20 @@ use std::hash::{Hash, Hasher};
 use std::io::Write;
 
 use clap::{App, Arg};
+#[allow(unused_imports)]
+use ctor::ctor;
+use log::LevelFilter;
 use mac_address::get_mac_address;
+use simple_logger::SimpleLogger;
+
+#[ctor::ctor]
+fn init() {
+    SimpleLogger::new()
+        .without_timestamps()
+        .with_level(LevelFilter::Info)
+        .init()
+        .unwrap();
+}
 
 fn main(){
     let safe = self_mac_addr_as_string();
@@ -25,7 +38,7 @@ fn main(){
         .required(false)
         .index(1))
         .get_matches();
-    let dotenv = matches.value_of("dotenv").unwrap_or(".env");
+    let dotenv = matches.value_of("dotenv").unwrap();
     File::create(senv).expect("Creation failed...");
     copy(dotenv, senv)
         .expect("Error: can't create a copy of data...");
@@ -35,7 +48,7 @@ fn main(){
         .open(senv)
         .expect("Error: can't open a copy...");
     write!(cfg, "{}", safe).and_then(|()| {
-        println!("Done! You can take a look at \".safe_env\" file!");
+        log::info!("Done! You can take a look at \".safe_env\" file!");
         Ok(())
     }).expect("Error: can't create a copy...");
 }

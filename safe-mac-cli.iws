@@ -7,11 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="test included">
-      <change afterPath="$PROJECT_DIR$/tests/common/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+    <list default="true" id="f673cc51-8ac1-4078-b110-109acb72e7fb" name="Changes" comment="test improvement">
       <change beforePath="$PROJECT_DIR$/safe-mac-cli.iws" beforeDir="false" afterPath="$PROJECT_DIR$/safe-mac-cli.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/main_test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/main_test.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +146,7 @@
       <workItem from="1669240348623" duration="29000" />
       <workItem from="1669240384406" duration="1888000" />
       <workItem from="1669275393488" duration="645000" />
-      <workItem from="1669658045354" duration="7598000" />
+      <workItem from="1669658045354" duration="8233000" />
     </task>
     <task id="LOCAL-00001" summary="Test impl">
       <created>1668995763192</created>
@@ -213,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669672505532</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test improvement">
+      <created>1669718113097</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669718113097</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +244,8 @@
     <MESSAGE value=".gitignore" />
     <MESSAGE value="naming" />
     <MESSAGE value="test included" />
-    <option name="LAST_COMMIT_MESSAGE" value="test included" />
+    <MESSAGE value="test improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="test improvement" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

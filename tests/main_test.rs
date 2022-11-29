@@ -25,8 +25,7 @@ fn basic_case() -> Result<()> { let tmp = TempDir::new()?;
         .current_dir(tmp.path())
         .arg("config.txt")
         .assert()
-        .success()
-        .stdout("Done! You can take a look at \".safe_env\" file!\n");
+        .success();
     match fs::read_to_string(tmp.path().join(".safe_env")) {
         Ok(line) => {
             assert_eq!(
