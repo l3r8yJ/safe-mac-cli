@@ -3,5 +3,10 @@ CLI Mac address ecnryptor.
 
 ![](https://github.com/l3r8yJ/safe-mac-cli/blob/master/demo/gif-demo.gif)
 
+## Installation
+
+`cargo install safe-mac-cli`
+
 ## Usage
-`./mac-safe-cli -- <path-to-file>`
+
+`safe-mac-cli -- <path-to-file>`
