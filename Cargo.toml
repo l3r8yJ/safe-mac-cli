@@ -17,7 +17,11 @@ mac_address = { version = "1.1.4" }
 pnet = "0.31.0"
 tempfile = "3.3.0"
 simple_logger = "4.0.0"
+log = "0.4.17"
+itertools = "0.10.5"
+ctor = "0.1.26"
 
 [dev-dependencies]
 assert_cmd = "2.0.6"
 fsutils = "0.1.7"
+predicates = "2.1.3"
