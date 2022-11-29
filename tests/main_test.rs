@@ -63,11 +63,11 @@ fn default_arg_fail() -> Result<()> {
 fn init_config_file(tmp: &TempDir, name: &str) -> Result<()> {
     File::create(tmp.path().join(name))?.write_all(
         "
-            BOT_TOKEN=5952187433:AAElWDo96OZExms06d4zqKGvtJ81BI-DaXw
-            BOT_PORT=3001
-            SERVER_HOST=http://localhost:8081
-            REDIS_URL=redis://127.0.0.1/
-            MONGODB_HOST=mongodb://localhost:27017/Hackathon
+        BOT_TOKEN=5952187433:AAElWDo96OZExms06d4zqKGvtJ81BI-DaXw
+        BOT_PORT=3001
+        SERVER_HOST=http://localhost:8081
+        REDIS_URL=redis://127.0.0.1/
+        MONGODB_HOST=mongodb://localhost:27017/Hackathon
         "
         .as_bytes(),
     )?;
@@ -77,7 +77,8 @@ fn init_config_file(tmp: &TempDir, name: &str) -> Result<()> {
 fn check_result(tmp: TempDir) -> Result<()> {
     match fs::read_to_string(tmp.path().join(".safe_env")) {
         Ok(line) => {
-            assert_eq!(line.contains("MAC_ADDR"), true)
+            assert_eq!(line.contains("MAC_ADDR"), true);
+            log::info!("\n{}\n", line);
         }
         Err(err) => {
             log::error!("{}", err);
