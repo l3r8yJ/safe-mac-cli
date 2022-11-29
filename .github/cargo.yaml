@@ -1,7 +1,7 @@
 name: cargo
 on:
-  push:
-  pull_request:
+  push: master
+  pull_request: master
 concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true

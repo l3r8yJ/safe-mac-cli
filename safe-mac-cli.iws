@@ -52,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
@@ -142,7 +143,7 @@
       <workItem from="1669240348623" duration="29000" />
       <workItem from="1669240384406" duration="1888000" />
       <workItem from="1669275393488" duration="645000" />
-      <workItem from="1669658045354" duration="8535000" />
+      <workItem from="1669658045354" duration="8609000" />
     </task>
     <task id="LOCAL-00001" summary="Test impl">
       <created>1668995763192</created>
@@ -232,6 +233,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Test impl" />
     <MESSAGE value="upd" />
     <MESSAGE value="demo" />
