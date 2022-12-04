@@ -33,6 +33,7 @@ fn basic_case_fail() -> Result<()> {
         .arg("config.txt")
         .assert()
         .failure();
+    assert_result_not_exist(tmp)?;
     Ok(())
 }
 
@@ -57,6 +58,7 @@ fn default_arg_fail() -> Result<()> {
         .current_dir(tmp.path())
         .assert()
         .failure();
+    assert_result_not_exist(tmp)?;
     Ok(())
 }
 
@@ -71,6 +73,14 @@ fn init_config_file(tmp: &TempDir, name: &str) -> Result<()> {
         "
         .as_bytes(),
     )?;
+    Ok(())
+}
+
+fn assert_result_not_exist(tmp: TempDir) -> Result<()> {
+    assert_eq!(
+        std::path::Path::new(&tmp.path().join(".safe_env")).exists(),
+        false
+    );
     Ok(())
 }
 
