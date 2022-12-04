@@ -1,6 +1,6 @@
 [package]
 name = "safe-mac-cli"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 description = "A CLI tool, that creates new .env file which based on something you choose and appends a mac-address to it."
 readme = "README.md"
