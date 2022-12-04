@@ -5,7 +5,13 @@ CLI Mac address ecnryptor.
 
 ## Installation
 
+#### any platform
+
 `cargo install safe-mac-cli`
+
+#### brew package
+
+`brew install safe-mac-cli`
 
 ## Usage
 
