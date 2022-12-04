@@ -19,7 +19,8 @@ fn basic_case_success() -> Result<()> {
         .current_dir(tmp.path())
         .arg("config.txt")
         .assert()
-        .success();
+        .success()
+        .stdout("INFO  [safe_mac_cli] Done! You can take a look at \".safe_env\" file!\n");
     check_result(tmp)?;
     Ok(())
 }
@@ -45,7 +46,8 @@ fn default_arg_success() -> Result<()> {
         .unwrap()
         .current_dir(tmp.path())
         .assert()
-        .success();
+        .success()
+        .stdout("INFO  [safe_mac_cli] Done! You can take a look at \".safe_env\" file!\n");
     check_result(tmp)?;
     Ok(())
 }

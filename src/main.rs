@@ -26,7 +26,7 @@ fn main() {
     let senv = ".safe_env";
     let matches = App::new("safe-mac-cli")
         .author("Ivan I. <clicker.heroes.acg@gmail.com")
-        .version("0.1.4")
+        .version("0.1.5")
         .name("safe-mac-cli")
         .about("Encrypts mac address and add into your .env file.")
         .arg(
@@ -53,12 +53,6 @@ fn main() {
                 Ok(()) => log::info!("Done! You can take a look at \".safe_env\" file!"),
                 Err(err) => panic!("Execution failed: {:?}", err),
             }
-            write!(cfg, "{}", safe)
-                .and_then(|()| {
-                    log::info!("Done! You can take a look at \".safe_env\" file!");
-                    Ok(())
-                })
-                .expect("Error: can't create a copy...");
         }
         Err(err) => {
             remove_file(senv).unwrap();
